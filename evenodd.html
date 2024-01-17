@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="value1" />
+    <button id="button" onclick="printString()">Button</button>
+    <p id="printed"></p>
+
+    <script>
+      function printString() {
+        const value = document.getElementById("value1");
+        let number = value.value;
+        let EvenNumber = 0;
+
+        for (let i = 1; i <= number; i++) {
+          if (i % 2 == 0) {
+            document.write(`This ${i} is Even <br>`);
+          } else {
+            document.write(`This ${i} is Odd <br>`);
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
+
+<!-- Check Howe many are even and odd -->

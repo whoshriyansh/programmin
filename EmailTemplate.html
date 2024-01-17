@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UdhariBazaar Registration Confirmation</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f4f4f4;
+        color: black;
+        margin: 0;
+        padding: 0;
+      }
+      table.container {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+      }
+      table.container-logo {
+        background-color: rgb(255, 253, 253);
+      }
+      table.parent-box {
+        background-color: #f4f4f4;
+        text-align: center;
+      }
+      img.Logo {
+        width: 200px;
+        margin: 20px auto 15px;
+      }
+
+      table.main {
+        background: #fff;
+        text-align: left;
+        width: 40%;
+        margin: auto;
+      }
+      table.main h1 {
+        color: #143c74;
+        margin: 10px 20px;
+      }
+      table.main p {
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 15px;
+        font-weight: 550;
+        margin: 10px 20px;
+      }
+
+      table.main img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+      }
+      a.login-button {
+        display: inline-block;
+        margin: 10px 20px;
+        padding: 12px 24px;
+        background-color: #f47c34;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease-in-out;
+        text-align: center;
+      }
+      a.login-button:hover {
+        background-color: #e65a19;
+      }
+
+      table.footer {
+        background: #333;
+        color: #fff;
+        text-align: center;
+        width: 100%;
+
+        padding-bottom: 5px;
+      }
+      table.social-icons {
+        margin-top: 15px;
+      }
+      table.social-icons img {
+        width: 30px;
+        margin: 0 10px;
+      }
+
+      @media screen and (max-width: 768px) {
+        table.main {
+          width: 80%;
+        }
+
+        table.footer p {
+          font-size: smaller;
+        }
+        table.social-icons img {
+          width: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <table class="parent-box">
+      <tr>
+        <td>
+          <table class="main">
+            <tr>
+              <td>
+                <table class="container-logo" align="center">
+                  <tr>
+                    <td>
+                      <img
+                        src="https://cdn.staropstech.com/clients/udharibazaar/assets/email-templates/logo.png"
+                        alt="UdhariBazaar Logo"
+                        class="Logo"
+                      />
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img
+                  src="https://cdn.staropstech.com/clients/udharibazaar/assets/extra-images/welcome-onboard.png"
+                  alt="Welcome Image"
+                />
+                <h1>Registration Successful!</h1>
+                <p>Dear {{name}},</p>
+                <p>{{user_category_with_code}},</p>
+                <p>
+                  Thank you for joining UdhariBazaar. Start exploring and
+                  managing your Udhari effortlessly.
+                </p>
+                <p>
+                  For assistance, reach out to our support team. We're here to
+                  help you!
+                </p>
+                <a href="https://udharibazaar.com/" class="login-button"
+                  >Login to your Account</a
+                >
+                <p>Best regards,<br />UdhariBazaar Team <br />+91 9650599471</p>
+                <p style="font-weight: normal">
+                  Have a Questions ?<br />Check Our
+                  <a style="color: #f47c34" href="https://udharibazaar.com/faq"
+                    >Knowledge based</a
+                  >
+                  for quick answers.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <table class="footer">
+                  <tr>
+                    <td>
+                      <table class="social-icons" align="center">
+                        <tr>
+                          <td>
+                            <a
+                              href="https://www.linkedin.com/company/udharibazaar"
+                              ><img
+                                src="https://cdn.staropstech.com/clients/udharibazaar/assets/email-templates/linkedin.png"
+                                alt="Social Icon 1"
+                            /></a>
+                          </td>
+                          <td>
+                            <a href="https://www.facebook.com/UdhariBazaar"
+                              ><img
+                                src="https://cdn.staropstech.com/clients/udharibazaar/assets/email-templates/facebook.png"
+                                alt="Social Icon 2"
+                            /></a>
+                          </td>
+                          <td>
+                            <a href="https://www.instagram.com/udharibazaar"
+                              ><img
+                                src="https://cdn.staropstech.com/clients/udharibazaar/assets/email-templates/instagram.png"
+                                alt="Social Icon 2"
+                            /></a>
+                          </td>
+                          <td>
+                            <a href="https://twitter.com/udharibazaar"
+                              ><img
+                                src="https://cdn.staropstech.com/clients/udharibazaar/assets/email-templates/twitter.png"
+                                alt="Social Icon 2"
+                            /></a>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="font-weight: 550">
+                      &copy; 2024 UdhariBazaar. All rights reserved.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="font-weight: lighter">
+                      You received this email as a confirmation of your
+                      successful Login to UdhariBazaar
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

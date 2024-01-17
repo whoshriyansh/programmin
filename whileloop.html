@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="number" />
+    <button id="button" onclick="itterate()">check</button>
+  </body>
+  <script>
+    const number = document.getElementById("number");
+    const button = document.getElementById("button");
+
+    function itterate() {
+      const finalNumber = number.value;
+      let i = 1;
+      let divisibility = 0;
+
+      while (i <= finalNumber) {
+        if (finalNumber % i == 0) {
+          divisibility = divisibility + 1;
+        }
+        i++;
+      }
+      console.log(divisibility);
+      if (divisibility == 2) {
+        alert("The number = " + finalNumber + " is prime");
+      } else {
+        alert("The Number is " + finalNumber + " is not a prime");
+      }
+    }
+  </script>
+</html>

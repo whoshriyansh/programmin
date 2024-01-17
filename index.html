@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input id="number" type="number" />
+    <input id="number2" type="number" />
+    <input id="number3" type="number" />
+    <input id="number4" type="number" />
+    <input id="number5" type="number" />
+    <button id="button" onclick="checkValue()">Check</button>
+  </body>
+  <script>
+    const number = document.getElementById("number");
+    const number2 = document.getElementById("number2");
+    const number3 = document.getElementById("number3");
+    const number4 = document.getElementById("number4");
+    const number5 = document.getElementById("number5");
+    const button = document.getElementById("button");
+
+    function checkValue() {
+      const enteredValue =
+        parseInt(number.value) +
+        parseInt(number2.value) +
+        parseInt(number3.value) +
+        parseInt(number4.value) +
+        parseInt(number5.value);
+
+      if (enteredValue % 2 == 0) {
+        alert("The Total sum is even");
+      } else if (condition) {
+        alert("The total sum is odd number");
+      }else
+
+      // console.log(enteredValue);
+    }
+  </script>
+</html>

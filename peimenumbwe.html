@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="number" />
+    <button id="button" onclick="itterate()">check</button>
+    <p id="printed"></p>
+  </body>
+  <script>
+    const number = document.getElementById("number");
+    const button = document.getElementById("button");
+    const printed = document.getElementById("printed");
+
+    function itterate() {
+      let inputValue = number.value;
+
+      for (let i = 1; i <= inputValue; i++) {
+        let primeNumber = 0;
+        for (let j = 1; j <= i; j++) {
+          if (i % j == 0) {
+            primeNumber = primeNumber + 1;
+          }
+        }
+        if (primeNumber == 2) {
+          printed.innerHTML += i + " ";
+          console.log(`The value of i ${i}`);
+        }
+      }
+    }
+  </script>
+</html>
+
+input = string, vowels and consulatnt diiferentiation

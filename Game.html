@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="number" id="number1" />
+    <input type="number" id="number2" />
+    <input type="number" id="number3" />
+    <input type="number" id="number4" />
+    <input type="number" id="number5" />
+    <button id="button" onclick="itterate()">check</button>
+  </body>
+  <script>
+    function itterate() {
+      const number1 = document.getElementById("number1").value;
+      const number2 = document.getElementById("number2").value;
+      const number3 = document.getElementById("number3").value;
+      const number4 = document.getElementById("number4").value;
+      const number5 = document.getElementById("number5").value;
+
+      let win = 0;
+      let loose = 0;
+
+      const inputArray = [];
+      inputArray.push(number1, number2, number3, number4, number5);
+
+      for (let i = 0; i < inputArray.length; i++) {
+        if (inputArray[i] % 2 === 0) {
+          win++;
+        } else {
+          loose++;
+        }
+      }
+
+      if (win === 3) {
+        document.write("HURRAH! YOU ARE THE WINNER");
+      } else {
+        document.write("OOPS! YOU LOST THE GAME");
+      }
+    }
+  </script>
+</html>

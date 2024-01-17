@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="value1" />
+    <button id="button" onclick="printString()">Button</button>
+    <p id="printed"></p>
+
+    <script>
+      function printString() {
+        const value = document.getElementById("value1");
+        const printed = document.getElementById("printed");
+        const name = value.value;
+        let result = "";
+
+        for (let i = 0; i < name.length; i++) {
+          if (name[i] !== " ") {
+            result +=
+              name[i].toUpperCase() === name[i]
+                ? name[i].toLowerCase()
+                : name[i].toUpperCase();
+            result += "<br>";
+          }
+        }
+
+        printed.innerHTML = result;
+      }
+    </script>
+  </body>
+</html>

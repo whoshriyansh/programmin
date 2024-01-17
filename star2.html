@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let string;
+      let spaces;
+      let n = 5;
+
+      for (let i = 1; i <= 4; i++) {
+        spaces = "&nbsp;&nbsp;&nbsp;&nbsp;";
+        for (let K = 1; K <= n - i; K++) {
+          document.write(spaces);
+          spaces = "&nbsp;&nbsp;&nbsp;&nbsp;";
+        }
+        string = "*";
+        for (let j = 1; j <= i * 2 - 1; j++) {
+          document.write(string + "&nbsp;&nbsp");
+          string = "*";
+        }
+        document.write("<br/>");
+      }
+      for (let i = 3; i >= 1; i--) {
+        spaces = "&nbsp;&nbsp;&nbsp;&nbsp;";
+        for (let K = 1; K <= n - i; K++) {
+          document.write(spaces);
+          spaces = "&nbsp;&nbsp;&nbsp;&nbsp;";
+        }
+        string = "*";
+        for (let j = 1; j <= i * 2 - 1; j++) {
+          document.write(string + "&nbsp;&nbsp");
+          string = "*";
+        }
+        document.write("<br/>");
+      }
+    </script>
+  </body>
+</html>
+
+<!-- --
+*
+***
+*****
+*******
+*****
+***
+ *
+-- -->

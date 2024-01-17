@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="value1" />
+    <button id="button" onclick="printString()">Button</button>
+    <p id="printed"></p>
+
+    <script>
+      function printString() {
+        const value = document.getElementById("value1");
+        const name = value.value;
+        let count = 0;
+
+        for (let i = 0; i < name.length; i++) {
+          let letter = name[i].toLowerCase();
+          if (
+            letter === "a" ||
+            letter === "e" ||
+            letter === "i" ||
+            letter === "o" ||
+            letter === "u"
+          ) {
+            count++;
+          }
+        }
+        document.write(
+          "Vowels: ",
+          count,
+          " ",
+          "Consonants: ",
+          name.length - count
+        );
+        document.write("<br> String is: ", name);
+      }
+    </script>
+  </body>
+</html>
